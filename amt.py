@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 import socket
 import random
+import ctypes
 from bitarray import bitarray
 
+def gen_nonce():
+    return ctypes.c_uint32(random.random()).value
 
 def send_relay_discovery(anycast_addr, anycast_port):
     protocol_version = 0
@@ -15,7 +18,7 @@ def send_relay_discovery(anycast_addr, anycast_port):
     nonce = random.random()
     print(message)
     message = message.tobytes()
-    print(message)
+    print(nonce)
     gw_out = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     gw_out.sendto(message, (anycast_addr, anycast_port))
     gw_in = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
