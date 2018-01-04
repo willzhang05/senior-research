@@ -18,11 +18,10 @@ class Source():
         self.router = router
 
     def __repr__(self):
-        return 'Source: {0:18s}\tGroup: {1:18s}\tPPS: {2:6d}\tRouter: {3:18s}'.format(self.source, self.group, self.pps, self.router)
+        return 'Group: {0:25s}\tSource: {1:25s}\tRouter: {2:18s}\tPackets/Second: {3:6d}'.format(self.group, self.source, self.router, self.pps)
 
     def __str__(self):
-        return 'Source: {0:18s}\tGroup: {1:18s}\tPPS: {2:6d}\tRouter: {3:18s}'.format(self.source, self.group, self.pps, self.router)
-        #return 'Source: ' + self.source + '\tGroup: ' + self.group + '\tPPS: ' + str(self.pps) + '\tRouter: ' + self.router
+        return 'Group: {0:25s}\tSource: {1:25s}\tRouter: {2:18s}\tPackets/Second: {3:6d}'.format(self.group, self.source, self.router, self.pps)
 
     def __eq__(self, other):
         return self.source == other.source and self.group == other.group and self.router == self.router
