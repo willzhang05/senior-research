@@ -15,12 +15,13 @@ class Source():
         self.speed = int(re.sub(r'[^0-9]', '', st[0]))
         self.pps = int(re.sub(r'[^0-9]', '', st[1]))
         self.packets = int(re.sub(r'[^0-9]', '', st[2]))
+        self.routers = set()
 
     def __repr__(self):
-        return 'Source: ' + self.source + '\nGroup: ' + self.group + '\nPPS: ' + str(self.pps)
+        return 'Source: ' + self.source + '\tGroup: ' + self.group + '\tPPS: ' + str(self.pps) + '\tRouters: ' + ', '.join(list(self.routers))
 
     def __str__(self):
-        return 'Source: ' + self.source + '\nGroup: ' + self.group + '\nPPS: ' + str(self.pps)
+        return 'Source: ' + self.source + '\tGroup: ' + self.group + '\tPPS: ' + str(self.pps) + '\tRouters: ' + ', '.join(list(self.routers))
 
     def __eq__(self, other):
         return self.source == other.source and self.group == other.group
@@ -39,7 +40,7 @@ def main():
             devices.add(ip.strip())
             ip = f.readline()
     devices = list(devices)      
-    output = set()
+    output = list()
     for device in devices:
         r = requests.get(BASE_URL + '?method=submit&device=' + device + '&command=show multicast&menu=0&arguments=route detail')
         new_text = re.sub(r'&[^\s]{2,4};|[\r]', '', r.text)
@@ -50,17 +51,24 @@ def main():
             if s_line[0] == '':
                 if 'Group' in fields:
                     s = Source(fields['Source'], fields['Group'], fields['Statistics'])
+                    s.routers.add(device)
                     if s.pps > 5:
                         print(s)
                         print()
-                        output.add(s)
+                        exists = False
+                        for src in output:
+                            if src == s:
+                                src.routers.union(s.routers)
+                                exists = True
+                        if not exists:
+                            output.append(s)
+
                 fields = dict()
             else:
                 fields[s_line[0]] = ''.join(s_line[1:])
         time.sleep(2)
-    out_list = list(output)
     print('-' * 10)
-    for o in out_list:
+    for o in output:
         print(o)
 
 if __name__ == '__main__':
