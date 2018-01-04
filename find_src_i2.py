@@ -22,6 +22,12 @@ class Source():
     def __str__(self):
         return 'Source: ' + self.source + '\nGroup: ' + self.group + '\nPPS: ' + str(self.pps)
 
+    def __eq__(self, other):
+        return self.source == other.source and self.group == other.group
+
+    def __hash__(self):
+        return hash(self.__repr__())
+
 
 def main():
     global FILENAME
@@ -33,10 +39,8 @@ def main():
             devices.add(ip.strip())
             ip = f.readline()
     devices = list(devices)      
-    print(devices)
-    output = []
+    output = set()
     for device in devices:
-        print(device)
         r = requests.get(BASE_URL + '?method=submit&device=' + device + '&command=show multicast&menu=0&arguments=route detail')
         new_text = re.sub(r'&[^\s]{2,4};|[\r]', '', r.text)
         s_new_text = new_text.split('\n')
@@ -48,13 +52,16 @@ def main():
                     s = Source(fields['Source'], fields['Group'], fields['Statistics'])
                     if s.pps > 5:
                         print(s)
-                        output.append(s)
+                        print()
+                        output.add(s)
                 fields = dict()
             else:
                 fields[s_line[0]] = ''.join(s_line[1:])
         time.sleep(2)
-    print(output)
-
+    out_list = list(output)
+    print('-' * 10)
+    for o in out_list:
+        print(o)
 
 if __name__ == '__main__':
     main()
