@@ -8,23 +8,27 @@ FILENAME = 'ips.txt'
 
 
 class Source():
-    def __init__(self, source, group, stats):
+    def __init__(self, source, group, stats, router):
         self.source = source
         self.group = group
         st = stats.split(',')
         self.speed = int(re.sub(r'[^0-9]', '', st[0]))
         self.pps = int(re.sub(r'[^0-9]', '', st[1]))
         self.packets = int(re.sub(r'[^0-9]', '', st[2]))
-        self.routers = set()
+        self.router = router
 
     def __repr__(self):
-        return 'Source: ' + self.source + '\tGroup: ' + self.group + '\tPPS: ' + str(self.pps) + '\tRouters: ' + ', '.join(list(self.routers))
+        return 'Source: {0:18s}\tGroup: {1:18s}\tPPS: {2:6d}\tRouter: {3:18s}'.format(self.source, self.group, self.pps, self.router)
 
     def __str__(self):
-        return 'Source: ' + self.source + '\tGroup: ' + self.group + '\tPPS: ' + str(self.pps) + '\tRouters: ' + ', '.join(list(self.routers))
+        return 'Source: {0:18s}\tGroup: {1:18s}\tPPS: {2:6d}\tRouter: {3:18s}'.format(self.source, self.group, self.pps, self.router)
+        #return 'Source: ' + self.source + '\tGroup: ' + self.group + '\tPPS: ' + str(self.pps) + '\tRouter: ' + self.router
 
     def __eq__(self, other):
-        return self.source == other.source and self.group == other.group
+        return self.source == other.source and self.group == other.group and self.router == self.router
+    
+    def __lt__(self, other):
+        return self.group < other.group
 
     def __hash__(self):
         return hash(self.__repr__())
@@ -40,7 +44,7 @@ def main():
             devices.add(ip.strip())
             ip = f.readline()
     devices = list(devices)      
-    output = list()
+    output = set()
     for device in devices:
         r = requests.get(BASE_URL + '?method=submit&device=' + device + '&command=show multicast&menu=0&arguments=route detail')
         new_text = re.sub(r'&[^\s]{2,4};|[\r]', '', r.text)
@@ -50,25 +54,18 @@ def main():
             s_line = s_new_text[i].split(':', 1)
             if s_line[0] == '':
                 if 'Group' in fields:
-                    s = Source(fields['Source'], fields['Group'], fields['Statistics'])
-                    s.routers.add(device)
+                    s = Source(fields['Source'], fields['Group'], fields['Statistics'], device)
                     if s.pps > 5:
                         print(s)
                         print()
-                        exists = False
-                        for src in output:
-                            if src == s:
-                                src.routers.union(s.routers)
-                                exists = True
-                        if not exists:
-                            output.append(s)
-
+                        output.add(s)
                 fields = dict()
             else:
                 fields[s_line[0]] = ''.join(s_line[1:])
         time.sleep(2)
+    out_list = sorted(list(output))
     print('-' * 10)
-    for o in output:
+    for o in out_list:
         print(o)
 
 if __name__ == '__main__':
