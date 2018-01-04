@@ -3,9 +3,25 @@ import requests
 import re
 import time
 
-
 BASE_URL = 'https://routerproxy.grnoc.iu.edu/internet2/'
 FILENAME = 'ips.txt'
+
+
+class Source():
+    def __init__(self, source, group, stats):
+        self.source = source
+        self.group = group
+        st = stats.split(',')
+        self.speed = int(re.sub(r'[^0-9]', '', st[0]))
+        self.pps = int(re.sub(r'[^0-9]', '', st[1]))
+        self.packets = int(re.sub(r'[^0-9]', '', st[2]))
+
+    def __repr__(self):
+        return 'Source: ' + self.source + '\nGroup: ' + self.group + '\nPPS: ' + str(self.pps)
+
+    def __str__(self):
+        return 'Source: ' + self.source + '\nGroup: ' + self.group + '\nPPS: ' + str(self.pps)
+
 
 def main():
     global FILENAME
@@ -18,7 +34,7 @@ def main():
             ip = f.readline()
     devices = list(devices)      
     print(devices)
-    output = dict()
+    output = []
     for device in devices:
         print(device)
         r = requests.get(BASE_URL + '?method=submit&device=' + device + '&command=show multicast&menu=0&arguments=route detail')
@@ -27,20 +43,17 @@ def main():
         fields = dict()
         for i in range(1, len(s_new_text) - 1):
             s_line = s_new_text[i].split(':', 1)
-            if s_line[0] != '':
+            if s_line[0] == '':
+                if 'Group' in fields:
+                    s = Source(fields['Source'], fields['Group'], fields['Statistics'])
+                    if s.pps > 5:
+                        print(s)
+                        output.append(s)
+                fields = dict()
+            else:
                 fields[s_line[0]] = ''.join(s_line[1:])
-        print(fields)
-        if 'Group' in fields:
-            output[fields['Group']] = fields['Statistics'].split(',')
-            print(output[fields['Group']])
-        '''for line in new_text:
-            output[device] = dict()
-            output[device][s_line[0]] = s_line[1]
-        '''
-
         time.sleep(2)
     print(output)
-
 
 
 if __name__ == '__main__':
