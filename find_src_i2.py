@@ -1,11 +1,14 @@
 #!/usr/bin/python3
+import sys
 import requests
 import re
 import time
+import datetime
 
 BASE_URL = 'https://routerproxy.grnoc.iu.edu/internet2/'
-FILENAME = 'ips.txt'
-
+FILENAME = '/home/wzhang/senior-research/ips.txt'
+FORMAT = '/home/wzhang/senior-research/logs/mcast-i2-{:%Y-%m-%d-%H:%M:%S}.log'
+VERBOSE = True
 
 class Source():
     def __init__(self, source, group, stats, router):
@@ -36,6 +39,9 @@ class Source():
 def main():
     global FILENAME
     global BASE_URL
+    global VERBOSE
+    global FORMAT
+
     devices = set()
     with open(FILENAME, 'r') as f:
         ip = f.readline()
@@ -44,6 +50,7 @@ def main():
             ip = f.readline()
     devices = list(devices)      
     output = set()
+    d = datetime.datetime.now()
     for device in devices:
         r = requests.get(BASE_URL + '?method=submit&device=' + device + '&command=show multicast&menu=0&arguments=route detail')
         new_text = re.sub(r'&[^\s]{2,4};|[\r]', '', r.text)
@@ -55,17 +62,22 @@ def main():
                 if 'Group' in fields:
                     s = Source(fields['Source'], fields['Group'], fields['Statistics'], device)
                     if s.pps > 5:
-                        print(s)
-                        print()
+                        if VERBOSE:
+                            print(s)
+                            print()
                         output.add(s)
                 fields = dict()
             else:
                 fields[s_line[0]] = ''.join(s_line[1:])
         time.sleep(2)
     out_list = sorted(list(output))
-    print('-' * 10)
-    for o in out_list:
-        print(o)
+    if VERBOSE:
+        print('-' * 10)
+        for o in out_list:
+            print(o)
+    with open(FORMAT.format(d), 'a+') as f:
+        f.write('\n'.join([str(out) for out in out_list]))
+        
 
 if __name__ == '__main__':
     main()
