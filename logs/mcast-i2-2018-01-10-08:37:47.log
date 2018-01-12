@@ -1,0 +1,16 @@
+Group: 224.0.1.129              	Source: 128.104.13.52/32         	Router: 64.57.28.241      	Packets/Second:     16
+Group: 224.0.1.129              	Source: 144.92.149.96/32         	Router: 64.57.28.241      	Packets/Second:     16
+Group: 224.4.0.10               	Source: 130.206.3.133/32         	Router: 64.57.28.242      	Packets/Second:    173
+Group: 232.223.222.1            	Source: 193.17.9.3/32            	Router: 64.57.28.249      	Packets/Second:   1141
+Group: 232.223.222.1            	Source: 193.17.9.3/32            	Router: 64.57.28.247      	Packets/Second:   1161
+Group: 232.223.222.1            	Source: 193.17.9.3/32            	Router: 64.57.28.250      	Packets/Second:   1200
+Group: 232.223.222.1            	Source: 193.17.9.3/32            	Router: 64.57.28.241      	Packets/Second:   1606
+Group: 232.223.222.2            	Source: 193.17.9.3/32            	Router: 64.57.28.249      	Packets/Second:   1435
+Group: 232.223.222.2            	Source: 193.17.9.3/32            	Router: 64.57.28.241      	Packets/Second:   1267
+Group: 233.1.14.9               	Source: 198.116.200.36/32        	Router: 64.57.28.241      	Packets/Second:    167
+Group: 233.44.15.9              	Source: 129.174.131.51/32        	Router: 64.57.28.249      	Packets/Second:   1139
+Group: 233.44.15.9              	Source: 129.174.131.51/32        	Router: 64.57.28.247      	Packets/Second:   1139
+Group: 233.44.15.9              	Source: 129.174.131.51/32        	Router: 64.57.28.242      	Packets/Second:   1139
+Group: 233.44.15.9              	Source: 129.174.131.51/32        	Router: 64.57.28.250      	Packets/Second:   1139
+Group: 233.44.15.9              	Source: 129.174.131.51/32        	Router: 64.57.28.248      	Packets/Second:   1139
+Group: 233.44.15.9              	Source: 129.174.131.51/32        	Router: 64.57.28.241      	Packets/Second:   1139
