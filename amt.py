@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import socket
+import struct
 import random
 import ctypes
 from bitarray import bitarray
@@ -28,10 +29,23 @@ def send_relay_discovery(anycast_addr, anycast_port):
         print("received: ", data)
     
 
+def recv_native(anycast_addr, anycast_port):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    sock.bind((anycast_addr, anycast_port))
+    mreq = struct.pack("4sl", socket.inet_aton(anycast_addr), socket.INADDR_ANY)
+    sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
+    while True:
+        print(sock.recv(10240))
+
 def main():
-    amt_relay_ip = "198.38.23.145"
-    amt_relay_port = 2268
-    send_relay_discovery(amt_relay_ip, amt_relay_port)
+#    amt_relay_ip = "198.38.23.145"
+#    amt_relay_port = 2268
+#    send_relay_discovery(amt_relay_ip, amt_relay_port)
+    mcast_grp = "233.44.15.9"
+    mcast_port = 50001
+    recv_native(mcast_grp, mcast_port)
+    
 
 if __name__ == '__main__':
     main()
