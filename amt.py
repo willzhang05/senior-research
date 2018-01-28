@@ -4,6 +4,13 @@ import struct
 import random
 import ctypes
 from bitarray import bitarray
+#import flask
+
+#app = Flask(__name__)
+
+#@app.route('/')
+def index():
+    return render_template("index.html")
 
 def gen_nonce():
     return ctypes.c_uint32(random.random()).value
@@ -45,6 +52,7 @@ def main():
     mcast_grp = "233.44.15.9"
     mcast_port = 50001
     recv_native(mcast_grp, mcast_port)
+
     
 
 if __name__ == '__main__':
