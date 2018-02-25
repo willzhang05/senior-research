@@ -38,12 +38,14 @@ def main():
         if info['network']['remarks'] is not None:
             desc = info['network']['remarks'][0]['description']
 
-        output = '{0:7} {1:40}\t\t{2:6} {3:20}\t\t{4:4} {5:4}\n\n'.format('Source:', k, 'Group:', unique[k][0], 'PPS:', unique[k][1])
+        output = '{0:7} {1:40}\t\t{2:6} {3:20}\t\t{4:4} {5:4}'.format('Source:', k, 'Group:', unique[k][0], 'PPS:', unique[k][1])
         print(output)
         if asn_desc is not None:
             print(asn_desc)
         if desc is not None:
             print(desc)
+        print()
+        print()
 
 
 if __name__ == "__main__":
