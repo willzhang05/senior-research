@@ -1,0 +1,470 @@
+
+Source:  128.104.112.11 			Group:  224.0.1.20 			PPS:  9
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  128.104.113.166 			Group:  224.0.1.20 			PPS:  10
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  128.104.117.156 			Group:  224.0.1.20 			PPS:  11
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  128.104.128.182 			Group:  224.2.127.254 			PPS:  6
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  128.104.13.52 			Group:  224.0.1.129 			PPS:  18
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  128.104.223.21 			Group:  224.0.1.129 			PPS:  58
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  128.138.220.10 			Group:  224.0.1.20 			PPS:  7
+COLORADO-AS - University of Colorado at Boulder, US
+
+Source:  128.171.113.197 			Group:  226.178.217.5 			PPS:  21
+UNIVHAWAII - University of Hawaii, US
+
+Source:  128.175.17.17 			Group:  224.0.1.20 			PPS:  12
+UDELNET - University of Delaware, US
+
+Source:  128.175.54.130 			Group:  224.0.1.20 			PPS:  6
+UDELNET - University of Delaware, US
+
+Source:  128.178.193.140 			Group:  224.0.1.20 			PPS:  6
+SWITCH Peering requests: (peering@switch.ch), CH
+Ecublens Camp Net
+Lausanne, Switzerland
+
+Source:  128.178.193.98 			Group:  224.0.1.20 			PPS:  8
+SWITCH Peering requests: (peering@switch.ch), CH
+Ecublens Camp Net
+Lausanne, Switzerland
+
+Source:  128.178.194.70 			Group:  224.0.1.20 			PPS:  12
+SWITCH Peering requests: (peering@switch.ch), CH
+Ecublens Camp Net
+Lausanne, Switzerland
+
+Source:  128.205.130.136 			Group:  224.0.1.55 			PPS:  7
+BUFFALO-ASN - State University of New York at Buffalo, US
+
+Source:  128.243.20.213 			Group:  233.3.18.5 			PPS:  9
+JANET Jisc Services Limited, GB
+The University of Nottingham
+
+Source:  128.243.20.214 			Group:  233.3.18.5 			PPS:  8
+JANET Jisc Services Limited, GB
+The University of Nottingham
+
+Source:  128.243.220.148 			Group:  233.3.18.5 			PPS:  8
+JANET Jisc Services Limited, GB
+The University of Nottingham
+
+Source:  128.39.2.22 			Group:  233.81.229.2 			PPS:  13
+UNINETT UNINETT, The Norwegian University & Research Network, NO
+UNINETT backbone network
+This network started its life internally at Norwegian
+Telecom Research, but was taken into use by UNINETT and
+its members early in the Internet's history in Norway.
+This address space is still used and administered by UNINETT.
+
+Source:  128.59.108.42 			Group:  224.0.255.135 			PPS:  6
+COLUMBIA-GW - Columbia University, US
+
+Source:  128.59.79.188 			Group:  235.5.5.5 			PPS:  13
+COLUMBIA-GW - Columbia University, US
+
+Source:  128.8.140.230 			Group:  226.178.217.5 			PPS:  9
+UMDNET - University of Maryland, US
+
+Source:  129.11.137.69 			Group:  224.0.60.0 			PPS:  17
+JANET Jisc Services Limited, GB
+University of Leeds
+Wood House Lane
+Leeds, LS2 9JT
+Leeds University
+
+Source:  129.11.6.250 			Group:  233.3.18.5 			PPS:  10
+JANET Jisc Services Limited, GB
+University of Leeds
+Wood House Lane
+Leeds, LS2 9JT
+Leeds University
+
+Source:  129.174.131.51 			Group:  233.44.15.9 			PPS:  1167
+GEORGE-MASON-UNIV - George Mason University, US
+
+Source:  129.2.50.132 			Group:  226.178.217.5 			PPS:  10
+UMDNET - University of Maryland, US
+
+Source:  129.2.50.65 			Group:  226.178.217.5 			PPS:  71
+UMDNET - University of Maryland, US
+
+Source:  129.2.50.67 			Group:  226.178.217.5 			PPS:  6
+UMDNET - University of Maryland, US
+
+Source:  129.2.50.86 			Group:  226.178.217.5 			PPS:  14
+UMDNET - University of Maryland, US
+
+Source:  129.2.51.24 			Group:  226.178.217.5 			PPS:  15
+UMDNET - University of Maryland, US
+
+Source:  129.2.66.186 			Group:  226.178.217.5 			PPS:  8
+UMDNET - University of Maryland, US
+
+Source:  129.2.8.9 			Group:  226.178.217.5 			PPS:  8
+UMDNET - University of Maryland, US
+
+Source:  130.18.212.111 			Group:  224.0.1.105 			PPS:  10
+MSSTATE - Mississippi State University, US
+
+Source:  130.18.212.56 			Group:  224.0.1.105 			PPS:  15
+MSSTATE - Mississippi State University, US
+
+Source:  130.206.3.133 			Group:  224.4.0.10 			PPS:  990
+REDIRIS RedIRIS Autonomous System, ES
+RedIRIS
+Spanish National R&D Network
+Madrid, Spain
+
+Source:  130.209.220.209 			Group:  224.0.1.20 			PPS:  12
+JANET Jisc Services Limited, GB
+University of Glasgow
+Glasgow
+Scotland
+G12 8QQ
+
+Source:  130.209.220.251 			Group:  224.0.1.20 			PPS:  12
+JANET Jisc Services Limited, GB
+University of Glasgow
+Glasgow
+Scotland
+G12 8QQ
+
+Source:  130.209.221.112 			Group:  224.0.1.20 			PPS:  9
+JANET Jisc Services Limited, GB
+University of Glasgow
+Glasgow
+Scotland
+G12 8QQ
+
+Source:  130.209.221.76 			Group:  224.0.1.20 			PPS:  9
+JANET Jisc Services Limited, GB
+University of Glasgow
+Glasgow
+Scotland
+G12 8QQ
+
+Source:  130.59.35.214 			Group:  233.81.229.2 			PPS:  6
+SWITCH Peering requests: (peering@switch.ch), CH
+Zurich, Switzerland
+
+Source:  130.59.35.46 			Group:  233.81.229.2 			PPS:  12
+SWITCH Peering requests: (peering@switch.ch), CH
+Zurich, Switzerland
+
+Source:  131.128.93.32 			Group:  233.56.12.11 			PPS:  416
+URI-AS - University of Rhode Island, US
+
+Source:  131.181.38.175 			Group:  230.0.0.10 			PPS:  42
+AARNET-AS-AP Australian Academic and Reasearch Network (AARNet), AU
+Queensland University of Technology
+
+Source:  131.188.109.244 			Group:  226.178.217.5 			PPS:  6
+DFN Verein zur Foerderung eines Deutschen Forschungsnetzes e.V., DE
+Erlangen
+
+Source:  131.188.109.245 			Group:  226.178.217.5 			PPS:  6
+DFN Verein zur Foerderung eines Deutschen Forschungsnetzes e.V., DE
+Erlangen
+
+Source:  134.129.127.188 			Group:  224.0.1.20 			PPS:  6
+NDIN-STATE - State of North Dakota, ITD, US
+
+Source:  134.129.95.122 			Group:  233.3.18.5 			PPS:  10
+NDIN-STATE - State of North Dakota, ITD, US
+
+Source:  134.129.95.22 			Group:  233.3.18.5 			PPS:  13
+NDIN-STATE - State of North Dakota, ITD, US
+
+Source:  134.225.50.240 			Group:  224.0.1.20 			PPS:  9
+JANET Jisc Services Limited, GB
+
+Source:  137.226.28.9 			Group:  224.2.127.254 			PPS:  7
+RWTH-AS, DE
+
+Source:  137.226.33.60 			Group:  233.3.18.5 			PPS:  11
+RWTH-AS, DE
+
+Source:  139.62.165.98 			Group:  224.0.1.129 			PPS:  123
+UNIVERSITY-OF-NORTH-FLORIDA - University of North Florida, US
+
+Source:  139.62.192.219 			Group:  234.4.3.3 			PPS:  10
+UNIVERSITY-OF-NORTH-FLORIDA - University of North Florida, US
+
+Source:  139.62.30.172 			Group:  230.230.230.230 			PPS:  9
+UNIVERSITY-OF-NORTH-FLORIDA - University of North Florida, US
+
+Source:  141.225.225.196 			Group:  235.5.5.5 			PPS:  6
+MEMPHIS-EDU - The University of Memphis, US
+
+Source:  141.225.225.201 			Group:  235.5.5.5 			PPS:  6
+MEMPHIS-EDU - The University of Memphis, US
+
+Source:  144.92.149.96 			Group:  224.0.1.129 			PPS:  19
+WISC-MADISON-AS - University of Wisconsin Madison, US
+
+Source:  146.57.255.194 			Group:  233.3.18.5 			PPS:  8
+NL-GIGAPOP - University of Minnesota, US
+
+Source:  146.57.255.196 			Group:  233.3.18.5 			PPS:  10
+NL-GIGAPOP - University of Minnesota, US
+
+Source:  147.156.149.134 			Group:  226.178.217.5 			PPS:  16
+REDIRIS RedIRIS Autonomous System, ES
+Universidad de Valencia
+Valencia
+
+Source:  147.213.149.219 			Group:  226.178.217.5 			PPS:  6
+SANET Bratislava, Slovakia, SK
+Slovak Academy of Sciences
+Dubravska cesta 9
+845 35 Bratislava
+
+Source:  147.228.63.81 			Group:  225.0.0.222 			PPS:  60
+CESNET2, CZ
+Plzen
+
+Source:  147.230.97.212 			Group:  226.178.217.5 			PPS:  7
+CESNET2, CZ
+Liberec
+
+Source:  148.88.16.14 			Group:  233.3.18.5 			PPS:  7
+JANET Jisc Services Limited, GB
+University of Lancaster
+Lancaster
+
+Source:  158.193.44.138 			Group:  226.178.217.5 			PPS:  18
+SANET Bratislava, Slovakia, SK
+University of Zilina
+Institute of Information and Communication Technologies
+Zilina
+
+Source:  158.193.44.171 			Group:  226.178.217.5 			PPS:  6
+SANET Bratislava, Slovakia, SK
+University of Zilina
+Institute of Information and Communication Technologies
+Zilina
+
+Source:  158.193.88.84 			Group:  226.178.217.5 			PPS:  12
+SANET Bratislava, Slovakia, SK
+University of Zilina
+Institute of Information and Communication Technologies
+Zilina
+
+Source:  158.196.138.121 			Group:  226.178.217.5 			PPS:  7
+CESNET2, CZ
+
+Source:  158.196.208.148 			Group:  226.178.217.5 			PPS:  13
+CESNET2, CZ
+
+Source:  158.196.208.16 			Group:  226.178.217.5 			PPS:  11
+CESNET2, CZ
+
+Source:  158.196.208.165 			Group:  226.178.217.5 			PPS:  18
+CESNET2, CZ
+
+Source:  158.196.208.64 			Group:  226.178.217.5 			PPS:  6
+CESNET2, CZ
+
+Source:  158.196.208.91 			Group:  226.178.217.5 			PPS:  20
+CESNET2, CZ
+
+Source:  158.38.103.120 			Group:  235.5.5.5 			PPS:  14
+UNINETT UNINETT, The Norwegian University & Research Network, NO
+Academic and research institutions,
+mostly UNINETT middle Norway
+
+Source:  158.39.206.34 			Group:  224.2.2.2 			PPS:  6
+UNINETT UNINETT, The Norwegian University & Research Network, NO
+Academic and research institutions,
+mostly UNINETT north Norway
+
+Source:  158.39.247.242 			Group:  225.0.0.222 			PPS:  26
+UNINETT UNINETT, The Norwegian University & Research Network, NO
+Academic and research institutions,
+mostly UNINETT north Norway
+
+Source:  160.39.143.200 			Group:  224.0.255.135 			PPS:  41
+COLUMBIA-GW - Columbia University, US
+
+Source:  160.39.34.188 			Group:  224.0.1.178 			PPS:  40
+COLUMBIA-GW - Columbia University, US
+
+Source:  164.107.158.117 			Group:  224.0.1.20 			PPS:  8
+OSUNET-AS - The Ohio State University, US
+
+Source:  164.107.52.134 			Group:  224.0.1.20 			PPS:  10
+OSUNET-AS - The Ohio State University, US
+
+Source:  164.107.52.190 			Group:  224.0.1.20 			PPS:  12
+OSUNET-AS - The Ohio State University, US
+
+Source:  169.229.101.128 			Group:  224.2.2.2 			PPS:  6
+UCB - University of California at Berkeley, US
+DMCA Designated Agent is policy@berkeley.edu
+
+Source:  192.87.121.10 			Group:  232.2.3.2 			PPS:  6
+SURFNET-NL SURFnet, The Netherlands, NL
+Roosevelt Academy
+Markt51a
+4331 LK Middelburg
+
+Source:  193.147.115.184 			Group:  224.0.23.12 			PPS:  13
+REDIRIS RedIRIS Autonomous System, ES
+Estacion Experimental de Zonas Aridas
+Ctra. de Sacramento s/n
+La Canada de S. Urbano
+E-04120 Almeria
+
+Source:  193.166.4.38 			Group:  233.81.229.2 			PPS:  10
+FUNETAS, FI
+Funet services network
+
+Source:  193.17.9.3 			Group:  232.223.222.2 			PPS:  3762
+EUMETSAT-OPS, DE
+
+Source:  193.60.199.162 			Group:  233.3.18.5 			PPS:  11
+JANET Jisc Services Limited, GB
+JANET(UK)
+ANSG Services
+
+Source:  193.60.199.178 			Group:  232.2.3.2 			PPS:  14
+JANET Jisc Services Limited, GB
+JANET(UK)
+ANSG Services
+
+Source:  194.160.23.22 			Group:  224.2.127.254 			PPS:  13
+SANET Bratislava, Slovakia, SK
+CVT Slovak Technical University
+
+Source:  194.80.134.18 			Group:  233.3.18.5 			PPS:  11
+JANET Jisc Services Limited, GB
+JANET(UK)
+ANSG Services
+
+Source:  194.95.245.4 			Group:  233.81.229.2 			PPS:  10
+DFN Verein zur Foerderung eines Deutschen Forschungsnetzes e.V., DE
+DFN Verein
+Berlin
+
+Source:  195.178.64.7 			Group:  233.81.229.2 			PPS:  6
+CESNET2, CZ
+CESNET, z.s.p.o.
+Prague 6
+
+Source:  195.251.209.51 			Group:  226.178.217.5 			PPS:  16
+GR-NET http://www.grnet.gr, GR
+University of Macedonia
+Thessaloniki
+Greece
+
+Source:  198.116.200.36 			Group:  233.1.14.9 			PPS:  168
+AS297 - National Aeronautics and Space Administration, US
+
+Source:  198.116.200.37 			Group:  233.1.14.7 			PPS:  167
+AS297 - National Aeronautics and Space Administration, US
+
+Source:  2001:4930:95:0:2989:f518:d5d3:55c6 			Group:  ff3e::caeb 			PPS:  10
+NDIN - State of North Dakota, US
+
+Source:  2001:4930:95::122 			Group:  ff7e:140:2001:620:0:fe:0:caeb 			PPS:  7
+NDIN - State of North Dakota, US
+
+Source:  2001:610:2f0:7::219 			Group:  ff7e:140:2001:620:0:fe:0:caeb 			PPS:  10
+SURFNET-NL SURFnet, The Netherlands, NL
+Zeeuwse Bibliotheek
+Middelburg
+
+Source:  2001:610:308:602::a 			Group:  ff7e:140:2001:620:0:fe:0:caeb 			PPS:  8
+SURFNET-NL SURFnet, The Netherlands, NL
+Roosevelt Academy
+Markt 51a
+4331 LK Middelburg
+
+Source:  2001:620:0:8016::2 			Group:  ff3e::caeb 			PPS:  15
+SWITCH Peering requests: (peering@switch.ch), CH
+SWITCH
+Zurich, Switzerland
+
+Source:  2001:620:0:8018::2 			Group:  ff3e::caeb 			PPS:  11
+SWITCH Peering requests: (peering@switch.ch), CH
+SWITCH
+Zurich, Switzerland
+
+Source:  2001:620:0:8034::2 			Group:  ff3e::caeb 			PPS:  6
+SWITCH Peering requests: (peering@switch.ch), CH
+SWITCH
+Zurich, Switzerland
+
+Source:  2001:630:1:309::178 			Group:  ff3e::caeb 			PPS:  8
+JANET Jisc Services Limited, GB
+JANET(UK)
+JANET Support Services
+
+Source:  2001:630:1:a::18 			Group:  ff7e:140:2001:620:0:fe:0:caeb 			PPS:  8
+JANET Jisc Services Limited, GB
+JANET(UK)
+JANET Support Services
+
+Source:  2001:648:2ffc:114::46 			Group:  ff7e:140:2001:620:0:fe:0:caeb 			PPS:  11
+GR-NET http://www.grnet.gr, GR
+Greek Research and Technology Network S.A
+56 Messogion Av.
+11527 Athens
+
+Source:  2001:700:0:4513::56 			Group:  ff3e::caeb 			PPS:  14
+UNINETT UNINETT, The Norwegian University & Research Network, NO
+
+Source:  2001:708:0:6::2 			Group:  ff3e::caeb 			PPS:  6
+FUNETAS, FI
+Finnish University and Research Network
+
+Source:  2001:708:30::beac 			Group:  ff3e::caeb 			PPS:  8
+FUNETAS, FI
+The Student Union of Helsinki University of Technology
+TKY
+BO-Box 69
+02151 ESPOO
+
+Source:  202.179.251.3 			Group:  233.3.18.5 			PPS:  12
+TEIN2-SG-AP Trans-Eurasia Information Network (TEIN2) - SG, CN
+Trans-Eurasia Information Network (TEIN2)
+China Education and Research Network Center
+Tsinghua University, Beijing 100084, China
+
+Source:  212.191.224.26 			Group:  233.81.229.2 			PPS:  10
+PIONIER-AS PIONIER, National Research and Education Network in Poland, PL
+Polish Optical Internet PIONIER
+IP NOC in Lodz, Poland
+
+Source:  62.40.104.78 			Group:  233.81.229.2 			PPS:  7
+IP allocation for GEANT network
+
+Source:  62.40.120.235 			Group:  233.81.229.2 			PPS:  8
+IP allocation for GEANT network infrastructure
+
+Source:  62.40.120.236 			Group:  233.81.229.2 			PPS:  9
+IP allocation for GEANT network infrastructure
+
+Source:  82.130.1.251 			Group:  233.10.43.42 			PPS:  8
+TKY-AS, FI
+
+Source:  83.212.2.46 			Group:  233.3.18.5 			PPS:  13
+GR-NET http://www.grnet.gr, GR
+Greek Research and Technology Network S.A
+56 Messogion Av.
+11527 Athens
+
+Source:  84.88.6.254 			Group:  233.3.18.5 			PPS:  11
+CESCA-AC, ES
+Anella Cientifica multicast monitoring
