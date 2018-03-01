@@ -1,0 +1,3 @@
+[submodule "amt"]
+	path = amt
+	url = git@github.com:willzhang05/amt.git
