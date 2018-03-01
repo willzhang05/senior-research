@@ -224,7 +224,7 @@ Source: 134.129.127.188                         		Group: 224.0.1.20          		P
 NDIN-STATE - State of North Dakota, ITD, US
 
 
-Source: 134.129.95.122                          		Group: 233.3.18.5          		PPS:   10
+Source: 134.129.95.122                          		Group: 233.10.43.42        		PPS:   10
 NDIN-STATE - State of North Dakota, ITD, US
 
 
@@ -467,6 +467,10 @@ Source: 198.116.200.37                          		Group: 233.1.14.7          		P
 AS297 - National Aeronautics and Space Administration, US
 
 
+Source: 198.32.154.77                           		Group: 239.2.11.71         		PPS:    7
+ABILENE - Internet2, US
+
+
 Source: 2001:4930:95:0:2989:f518:d5d3:55c6      		Group: ff3e::caeb          		PPS:   10
 NDIN - State of North Dakota, US
 
@@ -553,6 +557,10 @@ Source: 212.191.224.26                          		Group: 233.81.229.2        		P
 PIONIER-AS PIONIER, National Research and Education Network in Poland, PL
 Polish Optical Internet PIONIER
 IP NOC in Lodz, Poland
+
+
+Source: 62.40.104.234                           		Group: 233.81.229.2        		PPS:    6
+IP allocation for GEANT network
 
 
 Source: 62.40.104.78                            		Group: 233.81.229.2        		PPS:    7
